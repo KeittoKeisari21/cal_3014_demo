@@ -19,7 +19,7 @@ pipeline {
         }
         stage('jacoco'){
             steps{
-                jacoco()
+                jacoco(path:'target/site/jacoco/jacoco.xml')
             }
         }
 
